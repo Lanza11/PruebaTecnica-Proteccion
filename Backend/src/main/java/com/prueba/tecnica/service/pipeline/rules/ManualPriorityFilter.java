@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ManualPriorityFilter implements Filter<SolicitudPriorizada> {
 
-    @Value("${priority.weight.manual:5.0}") //Definimos que peso queremos darle a la prioridad manual segun se vea necesario
+    @Value("${priority.weight.manual:10.0}") //Definimos que peso queremos darle a la prioridad manual segun se vea necesario
     private double manualWeight;
 
     @Override
